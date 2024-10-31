@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>pedidos</title>
+    <link rel="stylesheet" href="./css/estilo.css">
+</head>
+<body>
+    <header>
+        <h1>
+            Verduleria Macarthur
+        </h1>
+        <nav>
+            <ul class="menuhorizontal">
+                <li><a href="#">Principal</a>
+                    <ul class="menuvertical">
+                        <li><a href="Ververduras.html">Ver_Verduras</a></li>                    
+                        <li><a href="Verfrutas.html">Ver_Frutas</a></li>                    
+                        <li><a href="Vercondimentos.html">Ver_condimentos</a></li>
+                    </ul>
+                </li>
+                <li><a href="#">Ofertas de hoy</a>
+                    <ul class="menuvertical">
+                        <li><a href="ofertasdefrutashoy.html">Ofertas_de_frutas_hoy</a></li>
+                        <li><a href="ofertasdeverdurashoy.html">ofertas_de_verduras_hoy</a></li>
+                    </ul>
+                </li>
+                
+                <li><a href="contacto.html">Contacto</a></li>
+            </ul>
+        </nav>
+    </header><br><br>
+    <main>
+        <section>
+            
+            <form action="https://formspree.io/f/meojyjlg"
+            method="POST">
+                <fieldset>
+                    <legend>Datos Personales:</legend>
+                    <label>Nombre:</label>
+                    <input size="30" type="text" name="nombre">
+                    <br>
+                    <label>Telefono:</label>
+                    <input size="30" type="number" name="telefono">
+                    <br>
+                    <label>Dirección:</label>
+                    <input size="30" type="number" name="direccion">
+                    <br>
+                    <label>Email:</label>
+                    <input size="30" type="email" name="email"><br>                
+                    <label>Mensaje:</label><br>
+                    <textarea id="mensaje" name="mensaje" rows="4" cols="30" required></textarea>
+                    <br><br>
+                    <input type="reset" value="Borrar">
+                </fieldset><br>
+                <div class="importante">
+                    <p>Los envios se <strong>realizan :</strong></p>
+                    <h2> solo los Martes </h2>
+                    <p>en el horarios de :<p>
+                    <h2> 9 a 14 horas </h2>
+                </div><br><br>
+                <fieldset>
+                    <legend>Datos de Envio</legend>
+                    <label>Fecha de Envio:</label>
+                    <input type="date" name="fecha" value="2024-10-11">
+                </fieldset>                                
+            </form>            
+        </section>        
+    </main>
+    <br>
+    <footer id="pielogo">     
+        <div>
+            <section class="seccionpie">
+                <h3>Sitio Web</h3>
+                <p><a href="index.html">Principal</a></p>
+                <p><a href="pedidos.html">Pedido</a></p>        
+            </section>
+            <section class="seccionpie">
+                <h3>Ayuda</h3>
+                <p><a href="contacto.html">Contacto</a></p>
+            </section>
+            <section class="seccionpie">
+                <address>Buenos Aires, Argentina</address>
+                <small>&Quispe; Derechos Reservados 2024</small>
+                <br>            
+            </section>
+        </div>
+        
+        </footer>
+        
+    
+</body>
+</html>
