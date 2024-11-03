@@ -3,10 +3,9 @@
     padding: 0;
     box-sizing: border-box;
 }
-p {
+p{
     color:green;
-    font-size: 19px;
-    
+    font-size: 19px;    
 }
 @media(max-width:768px){
     .about{
@@ -109,8 +108,7 @@ h1{
 }
 .cajafotos{
     display: flex;
-    height: 30%;
-    
+    height: 30%;    
     width: 96%;
     border: 5px black;
     flex-wrap: wrap;
@@ -134,7 +132,7 @@ h1{
 }
 
 nav{
-    max-width:900px ;
+    max-width: 960%; ;
     margin: auto;
     background-color: darkgreen;
     font-size: 20px;
@@ -153,7 +151,6 @@ nav{
 }
 .menuhorizontal li:hover{
     background-color: greenyellow;
-
 }
 .menuvertical{
     position: absolute;
@@ -161,7 +158,6 @@ nav{
     list-style: none;
     width: 250px;
     background-color: forestgreen;
-
 }
 .menuhorizontal li:hover .menuvertical{
     display: block;
@@ -175,8 +171,6 @@ nav{
     padding: 15px 15px 15px 20px;
     text-decoration: none;
 }
-
-
 .about{
     margin:80px auto;
     width:900px;
