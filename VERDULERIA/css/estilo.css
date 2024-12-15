@@ -19,12 +19,12 @@ h1{
     text-align: center;
     margin: 30px;
     padding: 15px;
-    background-color: aqua;
+    background-color: red;
     border-style: solid;
     border-radius: 20px;
     border-width: 1px;
     outline-offset: 15px;
-    outline: 2px dashed darkgreen;
+    outline: 2px dashed black;
     box-shadow: cornflowerblue 5px 5px 10px inset;
 }
 .importante{
@@ -226,4 +226,27 @@ nav{
     margin-bottom: 16px;
     grid-column: 1/3;
     grid-row: 1/3;
+}
+#formulario  section > button{
+    font-size: 18px;
+    color: black;
+    background-color: red;
+    
+}
+#formulario  section > #botonEnviar{
+    background-color: rgb(16, 228, 16);
+}
+.botones {
+    text-align: center;
+}
+.botones > button {
+    font-size: 18px;
+    background-color: yellow
+    
+}
+#aceptado {
+    text-align: center;
+}
+#detalle {
+    text-align: center;
 }

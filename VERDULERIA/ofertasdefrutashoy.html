@@ -32,14 +32,14 @@
             <div class="justificarderecha">
                 <h3>Naranja jugo</h3>
                 <h2> 2 kilos x $999</h2>
-                <a href="carrito.html" alt="carrito"><button>comprar</button></a>
+                <button id="btnComprar" onclick="agregarProducto('Naranja jugo', 999)">Comprar</button>
             </div>
         </div><br>
         <div class="ofertafrutas">
             <div class="justificarizquierda">
                 <h3>Frutillas</h3>                
                 <h2>2 kilos x $2.999 </h2>
-                <a href="carrito.html" alt="carrito"><button>comprar</button></a>
+                <button id="btnComprar" onclick="agregarProducto('Frutillas', 2999)">Comprar</button>
             </div>
             <img src="./img/frutillas.jpeg" alt="foto de frutillas">
         </div><br>
@@ -50,14 +50,14 @@
             <div class="justificarderecha">
                 <h3>Durazno</h3>
                 <h2> 2 kilos x $3.999</h2>
-                <a href="carrito.html" alt="carrito"><button>comprar</button></a>
+                <button id="btnComprar" onclick="agregarProducto('Durazno', 3999)">Comprar</button>
             </div>
         </div><br>
         <div class="ofertafrutas">
             <div class="justificarizquierda">
                 <h3>Manzanas Verdes</h3>                
                 <h2>2 kilos x $1.499 </h2>
-                <a href="carrito.html" alt="carrito"><button>comprar</button></a>
+                <button id="btnComprar" onclick="agregarProducto('Manzanas Verde', 1499)">Comprar</button>
             </div>
             <img src="./img/manzana_verde.jpeg" alt="foto de manzanas verdes">
         </div><br>
@@ -68,14 +68,14 @@
             <div class="justificarderecha">
                 <h3>Mandarinas</h3>
                 <h2> 2 kilos x $1.999</h2>
-                <a href="carrito.html" alt="carrito"><button>comprar</button></a>
+                <button id="btnComprar" onclick="agregarProducto('Mandarinas', 1999)">Comprar</button>
             </div>
         </div><br>
         <div class="ofertafrutas">
             <div class="justificarizquierda">
                 <h3>Manzanas Rojas</h3>                
                 <h2>2 kilos x $1.499 </h2>
-                <a href="carrito.html" alt="carrito"><button>comprar</button></a>
+                <button id="btnComprar" onclick="agregarProducto('Manzanas Rojas', 1499)">Comprar</button>
             </div>
             <div>
                 <img src="./img/manzana_rojas.jpeg" alt="foto de manzanas rojas">
@@ -87,11 +87,16 @@
             </div>
             <div class="justificarderecha">
                 <h3>Peras</h3>
-                <h2> 2 kilos x $3.999</h2>
-                <a href="carrito.html" alt="carrito"><button>comprar</button></a>
+                <h2> 2 kilos x $1.999</h2>
+                <button id="btnComprar" onclick="agregarProducto('Peras', 1999)">Comprar</button>
             </div>
         </div>>
     </main>
+    <section class="botones">
+        <button id="btnPagar" onclick="pagar()">Pagar</button>
+        <button id="btnLimpiar" onclick="limpiarCarrito()">Vaciar Carrito</button>
+    </section>
+    <div id="carrito"></div>
     <footer id="pielogo">     
         <div>
             <section class="seccionpie">
@@ -108,8 +113,8 @@
                 <small>&Quispe; Derechos Reservados 2024</small>
                 <br>            
             </section>
-        </div>
-        
+        </div>        
     </footer>
+    <script src="./js/enviarpedido.js"></script>
 </body>
 </html>

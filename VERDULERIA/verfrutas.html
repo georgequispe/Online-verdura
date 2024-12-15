@@ -30,7 +30,7 @@
         <div class="frutasdulces">
             <div class="caja1">                
                 <div>
-                    <img src="./img/cerezas.jpeg" alt="foto de cerezas">
+                    <img loading="lazy" src="./img/cerezas.jpeg" alt="foto de cerezas">
                 </div>
                 <div>
                     <p>Cerezas</p>
@@ -38,13 +38,13 @@
                 <div>
                     <p><strong>kilo $7999</strong></p>
                 </div>
-                <div>
-                    <a href="carrito.html" alt="carrito"><button>comprar</button></a>
+                <div><button id="btnComprar" onclick="agregarProducto('Cerezas', 7999)">Comprar</button>
+                    
                 </div>
             </div>
             <div class="caja2banana">                
                 <div>
-                    <img src="./img/banana_ecuador.jpeg" alt="foto de banana Ecuador">
+                    <img loading="lazy" src="./img/banana_ecuador.jpeg" alt="foto de banana Ecuador">
                 </div>
                 <div id="banana">
                     <p>Banana Ecuador</p>
@@ -53,12 +53,12 @@
                     <p><strong>kilo $1999</strong></p>
                 </div>
                 <div>
-                    <a href="carrito.html" >alt="carrito"<button>comprar</button></a>
+                    <button id="btnComprar" onclick="agregarProducto('Banana_Ecuador', 1999)">Comprar</button>
                 </div>
             </div>
             <div class="caja3sandia">                
                 <div>
-                    <img src="./img/sandia.jpeg" alt="foto de sandia">
+                    <img loading="lazy" src="./img/sandia.jpeg" alt="foto de sandia">
                 </div>
                 <div>
                     <p>Sandia</p>
@@ -67,12 +67,12 @@
                     <p><strong>kilo $1299</strong></p>
                 </div>
                 <div>
-                    <a href="carrito.html" alt="carrito"><button>comprar</button></a>
+                    <button id="btnComprar" onclick="agregarProducto('Sandia', 1299)">Comprar</button>
                 </div>
             </div>
             <div class="caja4">                
                 <div>
-                    <img src="./img/melon_rocio.jpeg" alt="foto de melon rocio">
+                    <img loading="lazy" src="./img/melon_rocio.jpeg" alt="foto de melon rocio">
                 </div>
                 <div>
                     <p>Melón Rocio de Miel</p>
@@ -81,14 +81,14 @@
                     <p><strong>kilo $1999</strong></p>
                 </div>
                 <div>
-                    <a href="carrito.html" alt="carrito"><button>comprar</button></a>
+                    <button id="btnComprar" onclick="agregarProducto('melon_rocio', 2000)">Comprar</button>
                 </div>
             </div>
         </div>
         <div class="frutasacidas">
             <div class="caja5">                
                 <div>
-                    <img src="./img/piña.jpeg" alt="foto de piña">
+                    <img loading="lazy" src="./img/piña.jpeg" alt="foto de piña">
                 </div>
                 <div>
                     <p>Piña</p>
@@ -97,12 +97,12 @@
                     <p><strong>kilo $3999</strong></p>
                 </div>
                 <div>
-                    <a href="carrito.html" alt="carrito"><button>comprar</button></a>
+                    <button id="btnComprar" onclick="agregarProducto('Piña', 2000)">Comprar</button>
                 </div>
             </div>
             <div class="caja6arandano">                
                 <div>
-                    <img src="./img/arandanos.jpeg" alt="foto de arándanos">
+                    <img loading="lazy" src="./img/arandanos.jpeg" alt="foto de arándanos">
                 </div>
                 <div>
                     <p>Arandanos</p>
@@ -111,12 +111,12 @@
                     <p><strong>Unidad $1499</strong></p>
                 </div>
                 <div>
-                    <a href="carrito.html" alt="carrito"><button>comprar</button></a>
+                    <button id="btnComprar" onclick="agregarProducto('Arandanos', 2000)">Comprar</button>
                 </div>
             </div>
             <div class="caja7maracuya">                
                 <div>
-                    <img src="./img/maracuya.jpeg" alt="foto de maracuya">
+                    <img loading="lazy" src="./img/maracuya.jpeg" alt="foto de maracuya">
                 </div>
                 <div>
                     <p>Maracuya</p>
@@ -125,12 +125,12 @@
                     <p><strong>kilo $3999</strong></p>
                 </div>
                 <div>
-                    <a href="carrito.html" alt="carrito"><button>comprar</button></a>
+                    <button id="btnComprar" onclick="agregarProducto('Maracuya', 2000)">Comprar</button>
                 </div>
             </div>
             <div class="caja8">                
                 <div>
-                    <img src="./img/ciruelas.jpeg" alt="foto de ciruelas">
+                    <img loading="lazy" src="./img/ciruelas.jpeg" alt="foto de ciruelas">
                 </div>
                 <div>
                     <p>Ciruelas Rojas</p>
@@ -139,10 +139,15 @@
                     <p><strong>kilo $2999</strong></p>
                 </div>
                 <div>
-                    <a href="carrito.html" alt="carrito"><button>comprar</button></a>
+                    <button id="btnComprar" onclick="agregarProducto('Ciruelas', 2000)">Comprar</button>
                 </div>
-        </div>
+        </div>        
     </main>
+    <section class="botones">
+        <button id="btnPagar" onclick="pagar()">Pagar</button>
+        <button id="btnLimpiar" onclick="limpiarCarrito()">Vaciar Carrito</button>
+    </section>
+    <div id="carrito"></div>
     <footer id="pielogo">     
         <div>
             <section class="seccionpie">
@@ -159,8 +164,9 @@
                 <small>&Quispe; Derechos Reservados 2024</small>
                 <br>            
             </section>
-        </div>
-        
-        </footer>
+        </div>        
+    </footer>
+    <script src="./js/enviarpedido.js"></script>
+    
 </body>
 </html>

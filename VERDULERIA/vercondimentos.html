@@ -29,7 +29,7 @@
         <div class="condimentoscomun">
             <div class="caja1">                
                 <div>
-                    <img src="./img/pmienta_blanca.jpeg" alt="foto de pimienta blanca">
+                    <img loading="lazy" src="./img/pmienta_blanca.jpeg" alt="foto de pimienta blanca">
                 </div>
                 <div>
                     <p>Pimienta Blanca</p>
@@ -38,12 +38,12 @@
                     <p><strong>Unidad $599</strong></p>
                 </div>
                 <div>
-                    <a href="carrito.html" alt="carrito"><button>comprar</button></a>
+                    <button id="btnComprar" onclick="agregarProducto('Pimienta Blanca', 599)">Comprar</button>
                 </div>
             </div>
             <div class="caja2">                
                 <div>
-                    <img src="./img/provensal.jpeg" alt="foto de provensal">
+                    <img loading="lazy" src="./img/provensal.jpeg" alt="foto de provensal">
                 </div>
                 <div>
                     <p>Provensal</p>
@@ -52,12 +52,12 @@
                     <p><strong>Unidad $599</strong></p>
                 </div>
                 <div>
-                    <a href="carrito.html" alt="carrito"><button>comprar</button></a>
+                    <button id="btnComprar" onclick="agregarProducto('Provensal', 599)">Comprar</button>
                 </div>
             </div>
             <div class="caja3">                
                 <div>
-                    <img src="./img/pimienta_negra.jpeg" alt="foto de pimienta negra">
+                    <img loading="lazy" src="./img/pimienta_negra.jpeg" alt="foto de pimienta negra">
                 </div>
                 <div>
                     <p>Pimienta Negra</p>
@@ -66,12 +66,12 @@
                     <p><strong>Unidad $1599</strong></p>
                 </div>
                 <div>
-                    <a href="carrito.html" alt="carrito"><button>comprar</button></a>
+                    <button id="btnComprar" onclick="agregarProducto('Pimienta Negra', 1599)">Comprar</button>
                 </div>
             </div>
             <div class="caja4">                
                 <div>
-                    <img src="./img/aji_molido.jpeg" alt="foto de aji molido">
+                    <img loading="lazy" src="./img/aji_molido.jpeg" alt="foto de aji molido">
                 </div>
                 <div>
                     <p>Aji Molido</p>
@@ -80,14 +80,14 @@
                     <p><strong>Unidad $599</strong></p>
                 </div>
                 <div>
-                    <a href="carrito.html" alt="carrito"><button>comprar</button></a>
+                    <button id="btnComprar" onclick="agregarProducto('Aji Molido', 599)">Comprar</button>
                 </div>
             </div>
         </div>
         <div class="condimentosespecial">
             <div class="caja5">                
                 <div>
-                    <img src="./img/adobo.jpeg" alt="foto de adobo">
+                    <img loading="lazy" src="./img/adobo.jpeg" alt="foto de adobo">
                 </div>
                 <div>
                     <p>Adobo</p>
@@ -96,12 +96,12 @@
                     <p><strong>Unidad $599</strong></p>
                 </div>
                 <div>
-                    <a href="carrito.html" >alt="carrito"<button>comprar</button></a>
+                    <button id="btnComprar" onclick="agregarProducto('Adobo', 599)">Comprar</button>
                 </div>
             </div>
             <div class="caja6arandano">                
                 <div>
-                    <img src="./img/comino.jpeg" alt="foto de comino">
+                    <img loading="lazy" src="./img/comino.jpeg" alt="foto de comino">
                 </div>
                 <div>
                     <p>Comino</p>
@@ -110,7 +110,7 @@
                     <p><strong>Unidad $599</strong></p>
                 </div>
                 <div>
-                    <a href="carrito.html" >alt="carrito"<button>comprar</button></a>
+                    <button id="btnComprar" onclick="agregarProducto('Comino', 599)">Comprar</button>
                 </div>
             </div>
             <div class="caja7">                
@@ -124,7 +124,7 @@
                     <p><strong>Unidad $599</strong></p>
                 </div>
                 <div>
-                    <a href="carrito.html" alt="carrito"><button>comprar</button></a>
+                    <button id="btnComprar" onclick="agregarProducto('Curcuma', 599)">Comprar</button>
                 </div>
             </div>
         <div class="caja8">                
@@ -138,12 +138,17 @@
                     <p><strong>Unidad $599</strong></p>
                 </div>
                 <div>
-                    <a href="carrito.html" alt="carrito"><button>comprar</button></a>
+                    <button id="btnComprar" onclick="agregarProducto('Oregano', 599)">Comprar</button>
                 </div>
         </div>
         </div>
         
     </main>
+    <section class="botones">
+        <button id="btnPagar" onclick="pagar()">Pagar</button>
+        <button id="btnLimpiar" onclick="limpiarCarrito()">Vaciar Carrito</button>
+    </section>
+    <div id="carrito"></div>
     <footer id="pielogo">     
         <div>
             <section class="seccionpie">
@@ -160,8 +165,8 @@
                 <small>&Quispe; Derechos Reservados 2024</small>
                 <br>            
             </section>
-        </div>
-        
+        </div>        
         </footer>
+        <script src="./js/enviarpedido.js"></script>
 </body>
 </html>
