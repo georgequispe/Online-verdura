@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Condimentos</title>
+    <link rel="stylesheet" href="./css/estiloverdura.css">
+    <link rel="stylesheet" href="./css/estilo.css">
+</head>
+<body>
+    <header class="fijo">
+        <h1>CONDIMENTOS</h1>
+        <nav>
+            <ul class="menuhorizontal">
+                <li><a href="#">Productos</a>
+                    <ul class="menuvertical">
+                        <li><a href="verfrutas.html">Ver_Verduras</a></li>
+                        <li><a href="ververduras.html">Ver_Frutas</a></li>
+                    </ul>
+                </li>
+                <li><a href="index.html">Inicio</a></li>
+                <li><a href="pedidos.html">Pedido</a></li>
+                <li><a href="contacto.html">Contacto</a></li>  
+            </ul>
+        </nav>
+    </header><br>
+    <h3>Tenemos una gran variedad de especies nacionales e importados</h3><br>
+    <main>
+        <div class="condimentoscomun">
+            <div class="caja1">                
+                <div>
+                    <img loading="lazy" src="./img/pmienta_blanca.jpeg" alt="foto de pimienta blanca">
+                </div>
+                <div>
+                    <p>Pimienta Blanca</p>
+                </div>
+                <div>
+                    <p><strong>Unidad $599</strong></p>
+                </div>
+                <div>
+                    <button id="btnComprar" onclick="agregarProducto('Pimienta Blanca', 599)">Comprar</button>
+                </div>
+            </div>
+            <div class="caja2">                
+                <div>
+                    <img loading="lazy" src="./img/provensal.jpeg" alt="foto de provensal">
+                </div>
+                <div>
+                    <p>Provensal</p>
+                </div>
+                <div>
+                    <p><strong>Unidad $599</strong></p>
+                </div>
+                <div>
+                    <button id="btnComprar" onclick="agregarProducto('Provensal', 599)">Comprar</button>
+                </div>
+            </div>
+            <div class="caja3">                
+                <div>
+                    <img loading="lazy" src="./img/pimienta_negra.jpeg" alt="foto de pimienta negra">
+                </div>
+                <div>
+                    <p>Pimienta Negra</p>
+                </div>
+                <div>
+                    <p><strong>Unidad $1599</strong></p>
+                </div>
+                <div>
+                    <button id="btnComprar" onclick="agregarProducto('Pimienta Negra', 1599)">Comprar</button>
+                </div>
+            </div>
+            <div class="caja4">                
+                <div>
+                    <img loading="lazy" src="./img/aji_molido.jpeg" alt="foto de aji molido">
+                </div>
+                <div>
+                    <p>Aji Molido</p>
+                </div>
+                <div>
+                    <p><strong>Unidad $599</strong></p>
+                </div>
+                <div>
+                    <button id="btnComprar" onclick="agregarProducto('Aji Molido', 599)">Comprar</button>
+                </div>
+            </div>
+        </div>
+        <div class="condimentosespecial">
+            <div class="caja5">                
+                <div>
+                    <img loading="lazy" src="./img/adobo.jpeg" alt="foto de adobo">
+                </div>
+                <div>
+                    <p>Adobo</p>
+                </div>
+                <div>
+                    <p><strong>Unidad $599</strong></p>
+                </div>
+                <div>
+                    <button id="btnComprar" onclick="agregarProducto('Adobo', 599)">Comprar</button>
+                </div>
+            </div>
+            <div class="caja6arandano">                
+                <div>
+                    <img loading="lazy" src="./img/comino.jpeg" alt="foto de comino">
+                </div>
+                <div>
+                    <p>Comino</p>
+                </div>
+                <div>
+                    <p><strong>Unidad $599</strong></p>
+                </div>
+                <div>
+                    <button id="btnComprar" onclick="agregarProducto('Comino', 599)">Comprar</button>
+                </div>
+            </div>
+            <div class="caja7">                
+                <div>
+                    <img src="./img/curcuma.jpeg" alt="foto de curcuma">
+                </div>
+                <div>
+                    <p>Curcuma</p>
+                </div>
+                <div>
+                    <p><strong>Unidad $599</strong></p>
+                </div>
+                <div>
+                    <button id="btnComprar" onclick="agregarProducto('Curcuma', 599)">Comprar</button>
+                </div>
+            </div>
+        <div class="caja8">                
+                <div>
+                    <img src="./img/oregano.jpeg" alt="foto de oregano">
+                </div>
+                <div>
+                    <p>Oregano</p>
+                </div>
+                <div>
+                    <p><strong>Unidad $599</strong></p>
+                </div>
+                <div>
+                    <button id="btnComprar" onclick="agregarProducto('Oregano', 599)">Comprar</button>
+                </div>
+        </div>
+        </div>
+        
+    </main>
+    <section class="botones">
+        <button id="btnPagar" onclick="pagar()">Pagar</button>
+        <button id="btnLimpiar" onclick="limpiarCarrito()">Vaciar Carrito</button>
+    </section>
+    <div id="carrito"></div>
+    <footer id="pielogo">     
+        <div>
+            <section class="seccionpie">
+                <h3>Sitio Web</h3>
+                <p><a href="index.html" alt="Inicio">Principal</a></p>
+                <p><a href="pedidos.html" alt="pedido">pedido</a></p>        
+            </section>
+            <section class="seccionpie">
+                <h3>Ayuda</h3>
+                <p><a href="contacto.html" alt="contacto">Contacto</a></p>
+            </section>
+            <section class="seccionpie">
+                <address>Buenos Aires, Argentina</address>
+                <small>&Quispe; Derechos Reservados 2024</small>
+                <br>            
+            </section>
+        </div>        
+        </footer>
+        <script src="./js/enviarpedido.js"></script>
+</body>
+</html>

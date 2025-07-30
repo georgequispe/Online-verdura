@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Oferas de hoy en frutas</title>
+    <link rel="stylesheet" href="./css/estilo.css">
+</head>
+<body>
+    <header class="fijo">
+        <h1>OFERTAS DE FRUTAS POR HOY</h1>
+        <nav>
+            <ul class="menuhorizontal">
+                <li><a href="#">Productos</a>
+                    <ul class="menuvertical">
+                        <li><a href="ververduras.html" alt="ver_verduras">Ver_Verduras</a></li>
+                        <li><a href="verfrutas.html" alt="ver_frutas">Ver_Frutas</a></li>
+                        <li><a href="vercondimentos.html" alt="vercondimentos">Ver_condimentos</a></li>
+                    </ul>
+                </li>
+                <li><a href="index.html" alt="Inicio">Inicio</a></li>
+                <li><a href="pedidos.html" alt="pedido">Pedido</a></li>
+                <li><a href="contacto.html" alt="contacto">Contacto</a></li>
+        </ul>
+        </nav>
+    </header><br><br>
+    <main>
+        <div class="ofertafrutas">
+            <div>
+                <img src="img/fotonaranja.jpeg" alt="foto de naranja">
+            </div>
+            <div class="justificarderecha">
+                <h3>Naranja jugo</h3>
+                <h2> 2 kilos x $999</h2>
+                <button id="btnComprar" onclick="agregarProducto('Naranja jugo', 999)">Comprar</button>
+            </div>
+        </div><br>
+        <div class="ofertafrutas">
+            <div class="justificarizquierda">
+                <h3>Frutillas</h3>                
+                <h2>2 kilos x $2.999 </h2>
+                <button id="btnComprar" onclick="agregarProducto('Frutillas', 2999)">Comprar</button>
+            </div>
+            <img src="./img/frutillas.jpeg" alt="foto de frutillas">
+        </div><br>
+        <div class="ofertafrutas">
+            <div>
+                <img src="./img/foto_durano.jpeg" alt="foto de duranzno">
+            </div>
+            <div class="justificarderecha">
+                <h3>Durazno</h3>
+                <h2> 2 kilos x $3.999</h2>
+                <button id="btnComprar" onclick="agregarProducto('Durazno', 3999)">Comprar</button>
+            </div>
+        </div><br>
+        <div class="ofertafrutas">
+            <div class="justificarizquierda">
+                <h3>Manzanas Verdes</h3>                
+                <h2>2 kilos x $1.499 </h2>
+                <button id="btnComprar" onclick="agregarProducto('Manzanas Verde', 1499)">Comprar</button>
+            </div>
+            <img src="./img/manzana_verde.jpeg" alt="foto de manzanas verdes">
+        </div><br>
+        <div class="ofertafrutas">
+            <div>
+                <img src="./img/mandarinas.jpeg" alt="foto de mandarinas">
+            </div>
+            <div class="justificarderecha">
+                <h3>Mandarinas</h3>
+                <h2> 2 kilos x $1.999</h2>
+                <button id="btnComprar" onclick="agregarProducto('Mandarinas', 1999)">Comprar</button>
+            </div>
+        </div><br>
+        <div class="ofertafrutas">
+            <div class="justificarizquierda">
+                <h3>Manzanas Rojas</h3>                
+                <h2>2 kilos x $1.499 </h2>
+                <button id="btnComprar" onclick="agregarProducto('Manzanas Rojas', 1499)">Comprar</button>
+            </div>
+            <div>
+                <img src="./img/manzana_rojas.jpeg" alt="foto de manzanas rojas">
+            </div>
+        </div><br>
+        <div class="ofertafrutas">
+            <div>
+                <img src="./img/peras.jpeg" alt="foto de peras">
+            </div>
+            <div class="justificarderecha">
+                <h3>Peras</h3>
+                <h2> 2 kilos x $1.999</h2>
+                <button id="btnComprar" onclick="agregarProducto('Peras', 1999)">Comprar</button>
+            </div>
+        </div>>
+    </main>
+    <section class="botones">
+        <button id="btnPagar" onclick="pagar()">Pagar</button>
+        <button id="btnLimpiar" onclick="limpiarCarrito()">Vaciar Carrito</button>
+    </section>
+    <div id="carrito"></div>
+    <footer id="pielogo">     
+        <div>
+            <section class="seccionpie">
+                <h3>Sitio Web</h3>
+                <p><a href="index.html" alt="Inicio">Principal</a></p>
+                <p><a href="pedidos.html" alt="pedido">pedido</a></p>        
+            </section>
+            <section class="seccionpie">
+                <h3>Ayuda</h3>
+                <p><a href="contacto.html" alt="contacto">Contacto</a></p>
+            </section>
+            <section class="seccionpie">
+                <address>Buenos Aires, Argentina</address>
+                <small>&Quispe; Derechos Reservados 2024</small>
+                <br>            
+            </section>
+        </div>        
+    </footer>
+    <script src="./js/enviarpedido.js"></script>
+</body>
+</html>
