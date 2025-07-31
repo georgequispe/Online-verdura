@@ -1,8 +1,8 @@
 /* === Reset básico === */
 body {
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-  background-color: #f6fff6;
-  color: #2d2d2d;
+  background-color: #fff8f2;
+  color: #3b2f2f;
   margin: 0;
   padding: 0;
 }
@@ -12,8 +12,8 @@ header.fijo {
   position: sticky;
   top: 0;
   z-index: 1000;
-  background-color: #e9fbe9;
-  border-bottom: 1px solid #b2d8b2;
+  background-color: #fbe9e0;
+  border-bottom: 1px solid #d8b8a8;
 }
 
 /* === Menú horizontal === */
@@ -24,19 +24,19 @@ header.fijo {
 }
 
 .menuhorizontal .nav-link {
-  color: #2f5d2f;
+  color: #6b3e2e;
   font-weight: 500;
 }
 
 .menuhorizontal .nav-link:hover {
-  color: #4caf50;
+  color: #e65100;
 }
 
 /* === Tarjetas de producto === */
 .card {
-  border: 1px solid #cce5cc;
+  border: 1px solid #e0c2b2;
   border-radius: 8px;
-  box-shadow: 0 2px 4px rgba(0, 128, 0, 0.05);
+  box-shadow: 0 2px 4px rgba(128, 64, 0, 0.05);
   transition: transform 0.2s ease;
 }
 
@@ -47,14 +47,14 @@ header.fijo {
 .card-img-top {
   height: 180px;
   object-fit: cover;
-  border-bottom: 1px solid #d4f0d4;
+  border-bottom: 1px solid #f0d4c4;
 }
 
 .card-title {
   font-size: 1.1rem;
   font-weight: bold;
   margin-bottom: 0.5rem;
-  color: #2f5d2f;
+  color: #6b3e2e;
 }
 
 .card-text {
@@ -66,13 +66,13 @@ header.fijo {
 .btnComprar {
   width: 100%;
   font-weight: 600;
-  background-color: #4caf50;
+  background-color: #e65100;
   color: white;
   border: none;
 }
 
 .btnComprar:hover {
-  background-color: #45a049;
+  background-color: #bf360c;
 }
 
 .btnPagar,
@@ -82,7 +82,7 @@ header.fijo {
 }
 
 .btnPagar {
-  background-color: #388e3c;
+  background-color: #8e24aa;
   color: white;
 }
 
@@ -93,7 +93,7 @@ header.fijo {
 
 /* === Carrito === */
 #carrito {
-  border: 1px solid #b2d8b2;
+  border: 1px solid #d8b8a8;
   padding: 1rem;
   background-color: #fefefe;
   border-radius: 8px;
@@ -102,7 +102,7 @@ header.fijo {
 /* === Pie de página === */
 footer {
   margin-top: 3rem;
-  background-color: #2f5d2f;
+  background-color: #6b3e2e;
   color: #fff;
 }
 

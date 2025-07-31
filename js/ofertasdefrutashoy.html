@@ -1,120 +1,160 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Oferas de hoy en frutas</title>
-    <link rel="stylesheet" href="./css/estilo.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Ofertas de hoy en frutas</title>
+
+  <!-- Bootstrap CDN -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+
+  <!-- Estilos personalizados -->
+  <link rel="stylesheet" href="./css/estilofruta.css">
+  <link rel="stylesheet" href="./css/estilo.css">
 </head>
 <body>
-    <header class="fijo">
-        <h1>OFERTAS DE FRUTAS POR HOY</h1>
-        <nav>
-            <ul class="menuhorizontal">
-                <li><a href="#">Productos</a>
-                    <ul class="menuvertical">
-                        <li><a href="ververduras.html" alt="ver_verduras">Ver_Verduras</a></li>
-                        <li><a href="verfrutas.html" alt="ver_frutas">Ver_Frutas</a></li>
-                        <li><a href="vercondimentos.html" alt="vercondimentos">Ver_condimentos</a></li>
-                    </ul>
-                </li>
-                <li><a href="../index.html" alt="Inicio">Inicio</a></li>
-                <li><a href="../js/pedidos.html" alt="pedido">Pedido</a></li>
-                <li><a href="../js/contacto.html" alt="contacto">Contacto</a></li>
+  <header class="fijo py-3 bg-light border-bottom">
+    <div class="container">
+      <h1 class="text-center">OFERTAS DE FRUTAS POR HOY</h1>
+      <nav>
+        <ul class="nav justify-content-center menuhorizontal">
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown">Productos</a>
+            <ul class="dropdown-menu menuvertical">
+              <li><a class="dropdown-item" href="ververduras.html">Ver Verduras</a></li>
+              <li><a class="dropdown-item" href="verfrutas.html">Ver Frutas</a></li>
+              <li><a class="dropdown-item" href="vercondimentos.html">Ver Condimentos</a></li>
+            </ul>
+          </li>
+          <li class="nav-item"><a class="nav-link" href="../index.html">Inicio</a></li>
+          <li class="nav-item"><a class="nav-link" href="../js/pedidos.html">Pedido</a></li>
+          <li class="nav-item"><a class="nav-link" href="../js/contacto.html">Contacto</a></li>
         </ul>
-        </nav>
-    </header><br><br>
-    <main>
-        <div class="ofertafrutas">
-            <div>
-                <img src="../img/fotonaranja.jpeg" alt="foto de naranja">
-            </div>
-            <div class="justificarderecha">
-                <h3>Naranja jugo</h3>
-                <h2> 2 kilos x $999</h2>
-                <button id="btnComprar" onclick="agregarProducto('Naranja jugo', 999)">Comprar</button>
-            </div>
-        </div><br>
-        <div class="ofertafrutas">
-            <div class="justificarizquierda">
-                <h3>Frutillas</h3>                
-                <h2>2 kilos x $2.999 </h2>
-                <button id="btnComprar" onclick="agregarProducto('Frutillas', 2999)">Comprar</button>
-            </div>
-            <img src="../img/frutillas.jpeg" alt="foto de frutillas">
-        </div><br>
-        <div class="ofertafrutas">
-            <div>
-                <img src="../img/foto_durano.jpeg" alt="foto de duranzno">
-            </div>
-            <div class="justificarderecha">
-                <h3>Durazno</h3>
-                <h2> 2 kilos x $3.999</h2>
-                <button id="btnComprar" onclick="agregarProducto('Durazno', 3999)">Comprar</button>
-            </div>
-        </div><br>
-        <div class="ofertafrutas">
-            <div class="justificarizquierda">
-                <h3>Manzanas Verdes</h3>                
-                <h2>2 kilos x $1.499 </h2>
-                <button id="btnComprar" onclick="agregarProducto('Manzanas Verde', 1499)">Comprar</button>
-            </div>
-            <img src="../img/manzana_verde.jpeg" alt="foto de manzanas verdes">
-        </div><br>
-        <div class="ofertafrutas">
-            <div>
-                <img src="../img/mandarinas.jpeg" alt="foto de mandarinas">
-            </div>
-            <div class="justificarderecha">
-                <h3>Mandarinas</h3>
-                <h2> 2 kilos x $1.999</h2>
-                <button id="btnComprar" onclick="agregarProducto('Mandarinas', 1999)">Comprar</button>
-            </div>
-        </div><br>
-        <div class="ofertafrutas">
-            <div class="justificarizquierda">
-                <h3>Manzanas Rojas</h3>                
-                <h2>2 kilos x $1.499 </h2>
-                <button id="btnComprar" onclick="agregarProducto('Manzanas Rojas', 1499)">Comprar</button>
-            </div>
-            <div>
-                <img src="../img/manzana_rojas.jpeg" alt="foto de manzanas rojas">
-            </div>
-        </div><br>
-        <div class="ofertafrutas">
-            <div>
-                <img src="../img/peras.jpeg" alt="foto de peras">
-            </div>
-            <div class="justificarderecha">
-                <h3>Peras</h3>
-                <h2> 2 kilos x $1.999</h2>
-                <button id="btnComprar" onclick="agregarProducto('Peras', 1999)">Comprar</button>
-            </div>
-        </div>>
-    </main>
-    <section class="botones">
-        <button id="btnPagar" onclick="pagar()">Pagar</button>
-        <button id="btnLimpiar" onclick="limpiarCarrito()">Vaciar Carrito</button>
-    </section>
-    <div id="carrito"></div>
-    <footer id="pielogo">     
-        <div>
-            <section class="seccionpie">
-                <h3>Sitio Web</h3>
-                <p><a href="../index.html" alt="Inicio">Principal</a></p>
-                <p><a href="../js/pedidos.html" alt="pedido">pedido</a></p>        
-            </section>
-            <section class="seccionpie">
-                <h3>Ayuda</h3>
-                <p><a href="../js/contacto.html" alt="contacto">Contacto</a></p>
-            </section>
-            <section class="seccionpie">
-                <address>Buenos Aires, Argentina</address>
-                <small>&Quispe; Derechos Reservados 2024</small>
-                <br>            
-            </section>
-        </div>        
-    </footer>
-    <script src="./js/enviarpedido.js"></script>
+      </nav>
+    </div>
+  </header>
+
+  <main class="container my-5">
+    <h3 class="text-center mb-4">¡Aprovechá nuestras ofertas especiales de frutas frescas!</h3>
+
+    <div class="row row-cols-1 row-cols-md-2 row-cols-lg-3 g-4">
+      <!-- Tarjeta: Naranja -->
+      <div class="col">
+        <div class="card h-100 text-center">
+          <img src="../img/fotonaranja.jpeg" class="card-img-top" alt="Naranja jugo">
+          <div class="card-body">
+            <h5 class="card-title">Naranja jugo</h5>
+            <p class="card-text">2 kilos x <strong>$999</strong></p>
+            <button class="btnComprar btn btn-success" onclick="agregarProducto('Naranja jugo', 999)">Comprar</button>
+          </div>
+        </div>
+      </div>
+
+      <!-- Tarjeta: Frutillas -->
+      <div class="col">
+        <div class="card h-100 text-center">
+          <img src="../img/frutillas.jpeg" class="card-img-top" alt="Frutillas">
+          <div class="card-body">
+            <h5 class="card-title">Frutillas</h5>
+            <p class="card-text">2 kilos x <strong>$2.999</strong></p>
+            <button class="btnComprar btn btn-success" onclick="agregarProducto('Frutillas', 2999)">Comprar</button>
+          </div>
+        </div>
+      </div>
+
+      <!-- Tarjeta: Durazno -->
+      <div class="col">
+        <div class="card h-100 text-center">
+          <img src="../img/foto_durano.jpeg" class="card-img-top" alt="Durazno">
+          <div class="card-body">
+            <h5 class="card-title">Durazno</h5>
+            <p class="card-text">2 kilos x <strong>$3.999</strong></p>
+            <button class="btnComprar btn btn-success" onclick="agregarProducto('Durazno', 3999)">Comprar</button>
+          </div>
+        </div>
+      </div>
+
+      <!-- Tarjeta: Manzanas Verdes -->
+      <div class="col">
+        <div class="card h-100 text-center">
+          <img src="../img/manzana_verde.jpeg" class="card-img-top" alt="Manzanas Verdes">
+          <div class="card-body">
+            <h5 class="card-title">Manzanas Verdes</h5>
+            <p class="card-text">2 kilos x <strong>$1.499</strong></p>
+            <button class="btnComprar btn btn-success" onclick="agregarProducto('Manzanas Verde', 1499)">Comprar</button>
+          </div>
+        </div>
+      </div>
+
+      <!-- Tarjeta: Mandarinas -->
+      <div class="col">
+        <div class="card h-100 text-center">
+          <img src="../img/mandarinas.jpeg" class="card-img-top" alt="Mandarinas">
+          <div class="card-body">
+            <h5 class="card-title">Mandarinas</h5>
+            <p class="card-text">2 kilos x <strong>$1.999</strong></p>
+            <button class="btnComprar btn btn-success" onclick="agregarProducto('Mandarinas', 1999)">Comprar</button>
+          </div>
+        </div>
+      </div>
+
+      <!-- Tarjeta: Manzanas Rojas -->
+      <div class="col">
+        <div class="card h-100 text-center">
+          <img src="../img/manzana_rojas.jpeg" class="card-img-top" alt="Manzanas Rojas">
+          <div class="card-body">
+            <h5 class="card-title">Manzanas Rojas</h5>
+            <p class="card-text">2 kilos x <strong>$1.499</strong></p>
+            <button class="btnComprar btn btn-success" onclick="agregarProducto('Manzanas Rojas', 1499)">Comprar</button>
+          </div>
+        </div>
+      </div>
+
+      <!-- Tarjeta: Peras -->
+      <div class="col">
+        <div class="card h-100 text-center">
+          <img src="../img/peras.jpeg" class="card-img-top" alt="Peras">
+          <div class="card-body">
+            <h5 class="card-title">Peras</h5>
+            <p class="card-text">2 kilos x <strong>$1.999</strong></p>
+            <button class="btnComprar btn btn-success" onclick="agregarProducto('Peras', 1999)">Comprar</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </main>
+
+  <section class="container text-center my-4">
+    <button class="btnPagar btn btn-primary me-2" onclick="pagar()">Pagar</button>
+    <button class="btnLimpiar btn btn-danger" onclick="limpiarCarrito()">Vaciar Carrito</button>
+  </section>
+
+  <div id="carrito" class="container my-4"></div>
+
+  <footer class="bg-dark text-white py-4">
+    <div class="container">
+      <div class="row">
+        <section class="col-md-4 seccionpie">
+          <h5>Sitio Web</h5>
+          <p><a href="../index.html" class="text-white">Principal</a></p>
+          <p><a href="../js/pedidos.html" class="text-white">Pedido</a></p>
+        </section>
+        <section class="col-md-4 seccionpie">
+          <h5>Ayuda</h5>
+          <p><a href="../js/contacto.html" class="text-white">Contacto</a></p>
+        </section>
+        <section class="col-md-4 seccionpie">
+          <address>Buenos Aires, Argentina</address>
+          <small>&copy; Quispe Derechos Reservados 2024</small>
+        </section>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Bootstrap JS -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+
+  <!-- Script personalizado -->
+  <script src="./js/enviarpedido.js"></script>
 </body>
 </html>
