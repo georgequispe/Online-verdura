@@ -1,172 +1,170 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Frutas</title>
-    <link rel="stylesheet" href="./css/estiloverdura.css">
-    <link rel="stylesheet" href="./css/estilo.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Frutas</title>
+
+  <!-- Bootstrap CDN -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+
+  <!-- Estilos personalizados -->
+  <link rel="stylesheet" href="./css/estilofruta.css">
+  <link rel="stylesheet" href="./css/estilo.css">
 </head>
 <body>
-    <header class="fijo">
-        <h1>FRUTAS</h1>        
-        <nav>
-            <ul class="menuhorizontal">
-                <li><a href="#" alt="principal">Productos</a>
-                    <ul class="menuvertical">
-                        <li><a href="ofertasdefrutashoy.html" alt="ofertas_de_frutas_hoy">ofertas_de_frutas_hoy</a></li>
-                    </ul>
-                </li>
-                <li><a href="../index.html" alt="Inicio">Inicio</a></li>
-                <li><a href="../js/pedidos.html" alt="pedido">Pedido</a></li>
-                <li><a href="../js/contacto.html" alt="contacto">Contacto</a></li>  
+  <header class="fijo bg-light py-3 shadow-sm">
+    <div class="container">
+      <h1 class="text-center">FRUTAS</h1>
+      <nav>
+        <ul class="nav justify-content-center menuhorizontal">
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown">Productos</a>
+            <ul class="dropdown-menu">
+              <li><a class="dropdown-item" href="ofertasdefrutashoy.html">Ofertas de Frutas Hoy</a></li>
             </ul>
-        </nav>
-    </header>
-    <br>
-    <h3>Tenemos una variedad de las mejores frutas del mercado </h3>
-    <br>
-    <main>
-        <div class="frutasdulces">
-            <div class="caja1">                
-                <div>
-                    <img loading="lazy" src="../img/cerezas.jpeg" alt="foto de cerezas">
-                </div>
-                <div>
-                    <p>Cerezas</p>
-                </div>
-                <div>
-                    <p><strong>kilo $7999</strong></p>
-                </div>
-                <div><button id="btnComprar" onclick="agregarProducto('Cerezas', 7999)">Comprar</button>
-                    
-                </div>
-            </div>
-            <div class="caja2banana">                
-                <div>
-                    <img loading="lazy" src="../img/banana_ecuador.jpeg" alt="foto de banana Ecuador">
-                </div>
-                <div id="banana">
-                    <p>Banana Ecuador</p>
-                </div>
-                <div>
-                    <p><strong>kilo $1999</strong></p>
-                </div>
-                <div>
-                    <button id="btnComprar" onclick="agregarProducto('Banana_Ecuador', 1999)">Comprar</button>
-                </div>
-            </div>
-            <div class="caja3sandia">                
-                <div>
-                    <img loading="lazy" src="../img/sandia.jpeg" alt="foto de sandia">
-                </div>
-                <div>
-                    <p>Sandia</p>
-                </div>
-                <div>
-                    <p><strong>kilo $1299</strong></p>
-                </div>
-                <div>
-                    <button id="btnComprar" onclick="agregarProducto('Sandia', 1299)">Comprar</button>
-                </div>
-            </div>
-            <div class="caja4">                
-                <div>
-                    <img loading="lazy" src="../img/melon_rocio.jpeg" alt="foto de melon rocio">
-                </div>
-                <div>
-                    <p>Melón Rocio de Miel</p>
-                </div>
-                <div>
-                    <p><strong>kilo $1999</strong></p>
-                </div>
-                <div>
-                    <button id="btnComprar" onclick="agregarProducto('melon_rocio', 2000)">Comprar</button>
-                </div>
-            </div>
+          </li>
+          <li class="nav-item"><a class="nav-link" href="../index.html">Inicio</a></li>
+          <li class="nav-item"><a class="nav-link" href="../js/pedidos.html">Pedido</a></li>
+          <li class="nav-item"><a class="nav-link" href="../js/contacto.html">Contacto</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main class="container my-5">
+    <h3 class="text-center mb-4">Tenemos una variedad de las mejores frutas del mercado</h3>
+
+    <div class="row row-cols-1 row-cols-md-2 row-cols-lg-4 g-4">
+      <!-- Producto: Cerezas -->
+      <div class="col">
+        <div class="card h-100 text-center">
+          <img src="../img/cerezas.jpeg" class="card-img-top" alt="foto de cerezas">
+          <div class="card-body">
+            <h5 class="card-title">Cerezas</h5>
+            <p class="card-text"><strong>Kilo $7999</strong></p>
+            <button class="btnComprar btn btn-success" onclick="agregarProducto('Cerezas', 7999)">Comprar</button>
+          </div>
         </div>
-        <div class="frutasacidas">
-            <div class="caja5">                
-                <div>
-                    <img loading="lazy" src="../img/piña.jpeg" alt="foto de piña">
-                </div>
-                <div>
-                    <p>Piña</p>
-                </div>
-                <div>
-                    <p><strong>kilo $3999</strong></p>
-                </div>
-                <div>
-                    <button id="btnComprar" onclick="agregarProducto('Piña', 2000)">Comprar</button>
-                </div>
-            </div>
-            <div class="caja6arandano">                
-                <div>
-                    <img loading="lazy" src="../img/arandanos.jpeg" alt="foto de arándanos">
-                </div>
-                <div>
-                    <p>Arandanos</p>
-                </div>
-                <div>
-                    <p><strong>Unidad $1499</strong></p>
-                </div>
-                <div>
-                    <button id="btnComprar" onclick="agregarProducto('Arandanos', 2000)">Comprar</button>
-                </div>
-            </div>
-            <div class="caja7maracuya">                
-                <div>
-                    <img loading="lazy" src="../img/maracuya.jpeg" alt="foto de maracuya">
-                </div>
-                <div>
-                    <p>Maracuya</p>
-                </div>
-                <div>
-                    <p><strong>kilo $3999</strong></p>
-                </div>
-                <div>
-                    <button id="btnComprar" onclick="agregarProducto('Maracuya', 2000)">Comprar</button>
-                </div>
-            </div>
-            <div class="caja8">                
-                <div>
-                    <img loading="lazy" src="../img/ciruelas.jpeg" alt="foto de ciruelas">
-                </div>
-                <div>
-                    <p>Ciruelas Rojas</p>
-                </div>
-                <div>
-                    <p><strong>kilo $2999</strong></p>
-                </div>
-                <div>
-                    <button id="btnComprar" onclick="agregarProducto('Ciruelas', 2000)">Comprar</button>
-                </div>
-        </div>        
-    </main>
-    <section class="botones">
-        <button id="btnPagar" onclick="pagar()">Pagar</button>
-        <button id="btnLimpiar" onclick="limpiarCarrito()">Vaciar Carrito</button>
-    </section>
-    <div id="carrito"></div>
-    <footer id="pielogo">     
-        <div>
-            <section class="seccionpie">
-                <h3>Sitio Web</h3>
-                <p><a href="../index.html" alt="Inicio">Principal</a></p>
-                <p><a href="../js/pedidos.html" alt="pedido">pedido</a></p>        
-            </section>
-            <section class="seccionpie">
-                <h3>Ayuda</h3>
-                <p><a href="../js/contacto.html" alt="contacto">Contacto</a></p>
-            </section>
-            <section class="seccionpie">
-                <address>Buenos Aires, Argentina</address>
-                <small>&Quispe; Derechos Reservados 2024</small>
-                <br>            
-            </section>
-        </div>        
-    </footer>
-    <script src="./js/enviarpedido.js"></script>
-    
+      </div>
+
+      <!-- Producto: Banana Ecuador -->
+      <div class="col">
+        <div class="card h-100 text-center">
+          <img src="../img/banana_ecuador.jpeg" class="card-img-top" alt="foto de banana Ecuador">
+          <div class="card-body">
+            <h5 class="card-title">Banana Ecuador</h5>
+            <p class="card-text"><strong>Kilo $1999</strong></p>
+            <button class="btnComprar btn btn-success" onclick="agregarProducto('Banana_Ecuador', 1999)">Comprar</button>
+          </div>
+        </div>
+      </div>
+
+      <!-- Producto: Sandía -->
+      <div class="col">
+        <div class="card h-100 text-center">
+          <img src="../img/sandia.jpeg" class="card-img-top" alt="foto de sandía">
+          <div class="card-body">
+            <h5 class="card-title">Sandía</h5>
+            <p class="card-text"><strong>Kilo $1299</strong></p>
+            <button class="btnComprar btn btn-success" onclick="agregarProducto('Sandia', 1299)">Comprar</button>
+          </div>
+        </div>
+      </div>
+
+      <!-- Producto: Melón Rocío -->
+      <div class="col">
+        <div class="card h-100 text-center">
+          <img src="../img/melon_rocio.jpeg" class="card-img-top" alt="foto de melón rocio">
+          <div class="card-body">
+            <h5 class="card-title">Melón Rocío de Miel</h5>
+            <p class="card-text"><strong>Kilo $1999</strong></p>
+            <button class="btnComprar btn btn-success" onclick="agregarProducto('Melon_Rocio', 1999)">Comprar</button>
+          </div>
+        </div>
+      </div>
+
+      <!-- Producto: Piña -->
+      <div class="col">
+        <div class="card h-100 text-center">
+          <img src="../img/piña.jpeg" class="card-img-top" alt="foto de piña">
+          <div class="card-body">
+            <h5 class="card-title">Piña</h5>
+            <p class="card-text"><strong>Kilo $3999</strong></p>
+            <button class="btnComprar btn btn-success" onclick="agregarProducto('Piña', 3999)">Comprar</button>
+          </div>
+        </div>
+      </div>
+
+      <!-- Producto: Arándanos -->
+      <div class="col">
+        <div class="card h-100 text-center">
+          <img src="../img/arandanos.jpeg" class="card-img-top" alt="foto de arándanos">
+          <div class="card-body">
+            <h5 class="card-title">Arándanos</h5>
+            <p class="card-text"><strong>Unidad $1499</strong></p>
+            <button class="btnComprar btn btn-success" onclick="agregarProducto('Arandanos', 1499)">Comprar</button>
+          </div>
+        </div>
+      </div>
+
+      <!-- Producto: Maracuyá -->
+      <div class="col">
+        <div class="card h-100 text-center">
+          <img src="../img/maracuya.jpeg" class="card-img-top" alt="foto de maracuyá">
+          <div class="card-body">
+            <h5 class="card-title">Maracuyá</h5>
+            <p class="card-text"><strong>Kilo $3999</strong></p>
+            <button class="btnComprar btn btn-success" onclick="agregarProducto('Maracuya', 3999)">Comprar</button>
+          </div>
+        </div>
+      </div>
+
+      <!-- Producto: Ciruelas -->
+      <div class="col">
+        <div class="card h-100 text-center">
+          <img src="../img/ciruelas.jpeg" class="card-img-top" alt="foto de ciruelas">
+          <div class="card-body">
+            <h5 class="card-title">Ciruelas Rojas</h5>
+            <p class="card-text"><strong>Kilo $2999</strong></p>
+            <button class="btnComprar btn btn-success" onclick="agregarProducto('Ciruelas', 2999)">Comprar</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </main>
+
+  <section class="container text-center my-4">
+    <button class="btnPagar btn btn-primary me-2" onclick="pagar()">Pagar</button>
+    <button class="btnLimpiar btn btn-danger" onclick="limpiarCarrito()">Vaciar Carrito</button>
+  </section>
+
+  <div id="carrito" class="container my-4"></div>
+
+  <footer class="bg-dark text-white py-4">
+    <div class="container">
+      <div class="row">
+        <section class="col-md-4 seccionpie">
+          <h5>Sitio Web</h5>
+          <p><a href="../index.html" class="text-white">Principal</a></p>
+          <p><a href="../js/pedidos.html" class="text-white">Pedido</a></p>
+        </section>
+        <section class="col-md-4 seccionpie">
+          <h5>Ayuda</h5>
+          <p><a href="../js/contacto.html" class="text-white">Contacto</a></p>
+        </section>
+        <section class="col-md-4 seccionpie">
+          <address>Buenos Aires, Argentina</address>
+          <small>&Quispe; Derechos Reservados 2024</small>
+        </section>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Bootstrap JS -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+
+  <!-- Script personalizado -->
+  <script src="./js/enviarpedido.js"></script>
 </body>
 </html>

@@ -1,171 +1,171 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>verduras</title>
-    <link rel="stylesheet" href="./css/estiloverdura.css">
-    <link rel="stylesheet" href="./css/estilo.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Verduras</title>
+  <!-- Bootstrap CDN -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+  <!-- Tus estilos personalizados -->
+  <link rel="stylesheet" href="./css/estiloverdura.css">
+  <link rel="stylesheet" href="./css/estilo.css">
 </head>
 <body>
-    <header class="fijo">
-        <h1>VERDURAS</h1>
-        <nav>
-            <ul class="menuhorizontal">
-                <li><a href="#" alt="Principal">Productos</a>
-                    <ul class="menuvertical">
-                        <li><a href="ofertasdeverdurashoy.html" alt="ofertas_de_verduras_hoy">ofertas_de_verduras_hoy</a></li>
-                    </ul>
-                </li>
-                <li><a href="../index.html" alt="Inicio">Inicio</a></li>
-                <li><a href="../js/pedidos.html" alt="pedido">Pedido</a></li>
-                <li><a href="../js/contacto.html" alt="contacto">Contacto</a></li>
-
-            </ul>
-        </nav>
-    </header>
-    <h3>Tenemos las mejores verduras del mercado</h3>
-    <main>        
-        <div class="lechugas">
-            <div class="caja1">                
-                <div>
-                    <img loading="lazy" src="../img/lechuga_criolla.jpeg" alt="foto de lechuga vriolla">
-                </div>
-                <div>
-                    <p>Lechuga Criolla</p>
-                </div>
-                <div>
-                    <p><strong>kilo $989</strong></p>
-                </div>
-                <div>
-                    <button id="btnComprar" onclick="agregarProducto('lechuga_criolla', 989)">Comprar</button>
-                </div>
-            </div>
-            <div class="caja2">                
-                <div>
-                    <img loading="lazy" src="../img/lechuga_capuchina.jpeg" alt="foto de lechuga capuchina">
-                </div>
-                <div>
-                    <p>Lechuga Capuchina</p>
-                </div>
-                <div>
-                    <p><strong>kilo $599</strong></p>
-                </div>
-                <div>
-                    <button id="btnComprar" onclick="agregarProducto('lechuga_capuchina', 599)">Comprar</button>
-                </div>
-            </div>
-            <div class="caja3">                
-                <div>
-                    <img loading="lazy" src="../img/lechuga_crespa.jpeg" alt="foto de lechuga crespa">
-                </div>
-                <div>
-                    <p>Lechuga Crespa</p>
-                </div>
-                <div>
-                    <p><strong>kilo $1599</strong></p>
-                </div>
-                <div>
-                    <button id="btnComprar" onclick="agregarProducto('lechuga_crespa', 1599)">Comprar</button>
-                </div>
-            </div>
-            <div class="caja4">                
-                <div>
-                    <img loading="lazy" src="../img/lechuga_morada.jpeg" alt="foto de lechuga morada">
-                </div>
-                <div>
-                    <p>Lechuga Morada</p>
-                </div>
-                <div>
-                    <p><strong>kilo $799</strong></p>
-                </div>
-                <div>
-                    <button id="btnComprar" onclick="agregarProducto('lechuga_morada', 799)">Comprar</button>
-                </div>
-            </div>
+  <!-- Header con navbar -->
+  <header class="bg-success text-white p-3 sticky-top">
+    <div class="container">
+      <h1 class="mb-3">VERDURAS</h1>
+      <nav class="navbar navbar-expand-lg navbar-dark">
+        <div class="container-fluid">
+          <ul class="navbar-nav">
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown">Productos</a>
+              <ul class="dropdown-menu">
+                <li><a class="dropdown-item" href="ofertasdeverdurashoy.html">Ofertas de verduras hoy</a></li>
+              </ul>
+            </li>
+            <li class="nav-item"><a class="nav-link" href="../index.html">Inicio</a></li>
+            <li class="nav-item"><a class="nav-link" href="../js/pedidos.html">Pedido</a></li>
+            <li class="nav-item"><a class="nav-link" href="../js/contacto.html">Contacto</a></li>
+          </ul>
         </div>
-        <div class="tuberculos">
-            <div class="caja5">                
-                <div>
-                    <img loading="lazy" src="../img/foto_zanahoria.jpeg" alt="foto de zanahoria">
-                </div>
-                <div>
-                    <p>Zanahoria</p>
-                </div>
-                <div>
-                    <p><strong>kilo $789</strong></p>
-                </div>
-                <div>
-                    <button id="btnComprar" onclick="agregarProducto('Zanahoria', 789)">Comprar</button>
-                </div>
-            </div>
-            <div class="caja6">                
-                <div>
-                    <img loading="lazy" src="../img/remolacha.jpeg" alt="foto de remolacha">
-                </div>
-                <div>
-                    <p>Remolacha</p>
-                </div>
-                <div>
-                    <p><strong>kilo $499</strong></p>
-                </div>
-                <div>
-                    <button id="btnComprar" onclick="agregarProducto('Remolacha', 499)">Comprar</button>
-                </div>
-            </div>
-            <div class="caja7">                
-                <div>
-                    <img loading="lazy" src="../img/mandioca.jpeg" alt="foto de mandioca">
-                </div>
-                <div>
-                    <p>Mandioca</p>
-                </div>
-                <div>
-                    <p><strong>kilo $399</strong></p>
-                </div>
-                <div>
-                    <button id="btnComprar" onclick="agregarProducto('Mandioca', 399)">Comprar</button>
-                </div>
-            </div>
-        <div class="caja8">                
-                <div>
-                    <img loading="lazy" src="../img/jengibre.jpeg" alt="foto de jengibre">
-                </div>
-                <div>
-                    <p>Jengibre</p>
-                </div>
-                <div>
-                    <p><strong>kilo $2999</strong></p>
-                </div>
-                <div>
-                    <button id="btnComprar" onclick="agregarProducto('Jengibre', 2999)">Comprar</button>
-                </div>
-        </div>
+      </nav>
     </div>
-    </main>
-    <section class="botones">
-        <button id="btnPagar" onclick="pagar()">Pagar</button>
-        <button id="btnLimpiar" onclick="limpiarCarrito()">Vaciar Carrito</button>
+  </header>
+
+  <div class="container my-4">
+    <h3 class="text-center">Tenemos las mejores verduras del mercado</h3>
+
+    <!-- Lechugas -->
+    <section class="row row-cols-1 row-cols-md-2 row-cols-lg-4 g-4 my-4">
+      <!-- Producto -->
+      <div class="col">
+        <div class="card h-100">
+          <img src="../img/lechuga_criolla.jpeg" class="card-img-top" alt="Lechuga Criolla">
+          <div class="card-body text-center">
+            <h5 class="card-title">Lechuga Criolla</h5>
+            <p class="card-text"><strong>Kilo $989</strong></p>
+            <button class="btn btn-success" onclick="agregarProducto('lechuga_criolla', 989)">Comprar</button>
+          </div>
+        </div>
+      </div>
+        <!-- Producto -->
+        <div class="col">
+          <div class="card h-100">
+            <img src="../img/lechuga_capuchina.jpeg" class="card-img-top" alt="Lechuga Capuchina">
+            <div class="card-body text-center">
+              <h5 class="card-title">Lechuga Capuchina</h5>
+              <p class="card-text"><strong>Kilo $989</strong></p>
+              <button class="btn btn-success" onclick="agregarProducto('lechuga_capuchina', 989)">Comprar</button>
+            </div>
+          </div>
+        </div>
+        <!-- Producto -->
+        <div class="col">
+          <div class="card h-100">
+            <img src="../img/lechuga_crespa.jpeg" class="card-img-top" alt="Lechuga Crespa">
+            <div class="card-body text-center">
+              <h5 class="card-title">Lechuga Crespa</h5>
+              <p class="card-text"><strong>Kilo $989</strong></p>
+              <button class="btn btn-success" onclick="agregarProducto('lechuga_crespa', 989)">Comprar</button>
+            </div>
+          </div>
+        </div>
+        <!-- Producto -->
+        <div class="col">   
+          <div class="card h-100">
+            <img src="../img/lechuga_morada.jpeg" class="card-img-top" alt="Lechuga Morada">
+            <div class="card-body text-center">
+              <h5 class="card-title">Lechuga Morada</h5>
+              <p class="card-text"><strong>Kilo $989</strong></p>
+                <button class="btn btn-success" onclick="agregarProducto('lechuga_morada', 989)">Comprar</button>
+            </div>
+          </div>
+        </div>
+        <!-- Producto -->
+        <div class="col">
+            <div class="card h-100">
+                <img src="../img/foto_zanahoria.jpeg" class="card-img-top" alt="Zanahoria">
+                <div class="card-body text-center">
+                <h5 class="card-title">Zanahoria</h5>
+                <p class="card-text"><strong>Kilo $989</strong></p>
+                <button class="btn btn-success" onclick="agregarProducto('zanahoria', 989)">Comprar</button>
+                </div>
+            </div>
+        </div>
+        <!-- Producto -->
+        <div class="col">
+            <div class="card h-100">
+                <img src="../img/remolacha.jpeg" class="card-img-top" alt="Remolacha">
+                <div class="card-body text-center">
+                <h5 class="card-title">Remolacha</h5>
+                <p class="card-text"><strong>Kilo $989</strong></p>
+                <button class="btn btn-success" onclick="agregarProducto('remolacha', 989)">Comprar</button>
+                </div>
+            </div>
+        </div>
+        <!-- Producto -->
+        <div class="col">
+            <div class="card h-100">
+                <img src="../img/mandioca.jpeg" class="card-img-top" alt="Mandioca">
+                <div class="card-body text-center">
+                <h5 class="card-title">Mandioca</h5>
+                <p class="card-text"><strong>Kilo $989</strong></p>
+                <button class="btn btn-success" onclick="agregarProducto('mandioca', 989)">Comprar</button>
+                </div>
+            </div>
+        </div>
+        <!-- Producto -->
+        <div class="col">
+            <div class="card h-100">
+                <img src="../img/jengibre.jpeg" class="card-img-top" alt="Jengibre">
+                <div class="card-body text-center">
+                <h5 class="card-title">Jengibre</h5>
+                <p class="card-text"><strong>Kilo $989</strong></p>
+                <button class="btn btn-success" onclick="agregarProducto('jengibre', 989)">Comprar</button>
+                </div>
+            </div>
+        </div>
+      
+      <!-- Repetir para cada producto... -->
+      <!-- Puedes copiar y adaptar el bloque anterior para cada verdura -->
+      <!-- Lechuga Capuchina, Crespa, Morada, Zanahoria, Remolacha, Mandioca, Jengibre -->
     </section>
-    <div id="carrito"></div>
-    <footer id="pielogo">     
-        <div>
-            <section class="seccionpie">
-                <h3>Sitio Web</h3>
-                <p><a href="../index.html" alt="Inicio">Principal</a></p>
-                <p><a href="../js/pedidos.html" alt="pedido">pedido</a></p>        
-            </section>
-            <section class="seccionpie">
-                <h3>Ayuda</h3>
-                <p><a href="contacto.html" alt="contacto">Contacto</a></p>
-            </section>
-            <section class="seccionpie">
-                <address>Buenos Aires, Argentina</address>
-                <small>&Quispe; Derechos Reservados 2024</small>
-                <br>            
-            </section>
-        </div>        
-    </footer>
-    <script src="./js/enviarpedido.js"></script>
+
+    <!-- Botones de acción -->
+    <section class="text-center my-4">
+      <button class="btn btn-primary me-2" onclick="pagar()">Pagar</button>
+      <button class="btn btn-danger" onclick="limpiarCarrito()">Vaciar Carrito</button>
+    </section>
+
+    <!-- Carrito -->
+    <div id="carrito" class="my-4"></div>
+  </div>
+
+  <!-- Footer -->
+  <footer class="bg-dark text-white py-4">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-4">
+          <h5>Sitio Web</h5>
+          <p><a href="../index.html" class="text-white">Principal</a></p>
+          <p><a href="../js/pedidos.html" class="text-white">Pedido</a></p>
+        </div>
+        <div class="col-md-4">
+          <h5>Ayuda</h5>
+          <p><a href="contacto.html" class="text-white">Contacto</a></p>
+        </div>
+        <div class="col-md-4">
+          <address>Buenos Aires, Argentina</address>
+          <small>&copy; Quispe Derechos Reservados 2024</small>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Bootstrap JS -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+  <!-- Tu script -->
+  <script src="./js/enviarpedido.js"></script>
 </body>
 </html>

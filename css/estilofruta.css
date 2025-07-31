@@ -16,7 +16,7 @@ header.fijo {
   border-bottom: 1px solid #ddd;
 }
 
-/* === Menú horizontal === */
+/* === Menú horizontal personalizado === */
 .menuhorizontal {
   list-style: none;
   padding-left: 0;
@@ -32,18 +32,7 @@ header.fijo {
   color: #28a745;
 }
 
-/* === Tarjetas de producto === */
-.card {
-  border: 1px solid #ddd;
-  border-radius: 8px;
-  box-shadow: 0 2px 4px rgba(0,0,0,0.05);
-  transition: transform 0.2s ease;
-}
-
-.card:hover {
-  transform: scale(1.02);
-}
-
+/* === Tarjetas de frutas === */
 .card-img-top {
   height: 180px;
   object-fit: cover;
@@ -61,7 +50,7 @@ header.fijo {
   margin-bottom: 1rem;
 }
 
-/* === Botones === */
+/* === Botones de acción === */
 .btnComprar {
   width: 100%;
   font-weight: 600;
@@ -84,8 +73,6 @@ header.fijo {
 /* === Pie de página === */
 footer {
   margin-top: 3rem;
-  background-color: #343a40;
-  color: #fff;
 }
 
 footer .seccionpie h5 {
