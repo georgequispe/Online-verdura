@@ -1,0 +1,205 @@
+/* === Reset básico === */
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Segoe UI', sans-serif;
+  background-color: #f9f9f9;
+  color: #333;
+}
+
+/* === Encabezado === */
+header {
+  background-color: #4CAF50;
+  color: white;
+  padding: 1rem;
+  text-align: center;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+}
+
+header h1 {
+  margin: 0;
+  font-size: 2rem;
+}
+
+/* === Navegación === */
+.menuhorizontal {
+  display: flex;
+  justify-content: center;
+  list-style: none;
+  padding: 0;
+  margin-top: 1rem;
+  gap: 2rem;
+}
+
+.menuhorizontal li {
+  position: relative;
+}
+
+.menuhorizontal a {
+  text-decoration: none;
+  color: white;
+  font-weight: bold;
+  padding: 0.5rem 1rem;
+  background-color: #388E3C;
+  border-radius: 5px;
+  transition: background-color 0.3s;
+}
+
+.menuhorizontal a:hover {
+  background-color: #2E7D32;
+}
+
+.menuvertical {
+  position: absolute;
+  top: 100%;
+  left: 0;
+  background-color: #66BB6A;
+  list-style: none;
+  padding: 0.5rem;
+  display: none;
+  border-radius: 5px;
+}
+
+.menuhorizontal li:hover .menuvertical {
+  display: block;
+}
+
+.menuvertical li a {
+  display: block;
+  padding: 0.5rem;
+  color: white;
+}
+
+/* === Main === */
+main {
+  max-width: 800px;
+  margin: 2rem auto;
+  padding: 1rem;
+  background-color: #ffffff;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0,0,0,0.1);
+}
+
+/* === Agradecimiento === */
+#aceptado {
+  text-align: center;
+  color: #4CAF50;
+  font-size: 1.5rem;
+  margin-bottom: 1rem;
+}
+
+/* === Formulario === */
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+fieldset {
+  border: 2px solid #4CAF50;
+  border-radius: 8px;
+  padding: 1rem;
+}
+
+legend {
+  font-weight: bold;
+  color: #388E3C;
+  padding: 0 0.5rem;
+}
+
+label {
+  display: block;
+  margin-top: 0.5rem;
+  font-weight: 500;
+}
+
+input, textarea, select {
+  width: 100%;
+  padding: 0.6rem;
+  margin-top: 0.3rem;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 1rem;
+}
+
+textarea {
+  resize: vertical;
+}
+
+/* === Botones === */
+.botones {
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+}
+
+button {
+  padding: 0.7rem 1.5rem;
+  font-size: 1rem;
+  font-weight: bold;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: transform 0.2s;
+}
+
+button[type="submit"] {
+  background-color: #FF9800;
+  color: white;
+}
+
+button[type="reset"] {
+  background-color: #F44336;
+  color: white;
+}
+
+button:hover {
+  transform: scale(1.05);
+}
+
+/* === Info de envío === */
+.info-envio {
+  text-align: center;
+  margin-top: 2rem;
+  background-color: #E8F5E9;
+  padding: 1rem;
+  border-radius: 8px;
+  color: #2E7D32;
+}
+
+.info-envio h2 {
+  margin: 0.5rem 0;
+  font-size: 1.3rem;
+}
+
+/* === Footer === */
+footer {
+  background-color: #4CAF50;
+  color: white;
+  padding: 2rem 1rem;
+  margin-top: 3rem;
+}
+
+.footer-content {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  gap: 2rem;
+}
+
+.seccionpie h3 {
+  margin-bottom: 0.5rem;
+}
+
+.seccionpie a {
+  color: white;
+  text-decoration: none;
+}
+
+.seccionpie a:hover {
+  text-decoration: underline;
+}
+
+address {
+  font-style: normal;
+}

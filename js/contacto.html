@@ -1,75 +1,109 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Contacto</title>
-    <link rel="stylesheet" href="./css/estilo.css">
-    <link rel='stylesheet' href='https://cdn-uicons.flaticon.com/2.6.0/uicons-brands/css/uicons-brands.css'>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contacto</title>
+
+  <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+
+  <!-- Iconos Flaticon -->
+  <link rel="stylesheet" href="https://cdn-uicons.flaticon.com/2.6.0/uicons-brands/css/uicons-brands.css">
+
+  <!-- Estilos personalizados -->
+ 
+  <link rel="stylesheet" href="../css/estilocontacto.css">
 </head>
 <body>
-    <header class="fijo">
-        <h1>Contacto</h1>       
-     <nav>
-        <ul class="menuhorizontal">
-            <li><a href="../index.html">Principal</a>
-                <ul class="menuvertical">
-                    <li><a href="ververduras.html">Ver_Verduras</a></li>                    
-                    <li><a href="verfrutas.html">Ver_Frutas</a></li>                    
-                    <li><a href="vercondimentos.html">Ver_condimentos</a></li>
-                </ul>
-            </li>
-            <li><a href="#">Ofertas de hoy</a>
-                <ul class="menuvertical">
-                    <li><a href="ofertasdefrutashoy.html">Ofertas_de_frutas_hoy</a></li>
-                    <li><a href="ofertasdeverdurashoy.html">ofertas_de_verduras_hoy</a></li>
-                </ul>
-            </li>
-            <li><a href="pedidos.html">Pedido</a></li>            
-        </ul>    
-    </nav>
-    </header>
-    <main>
-        <section class="about">
-            <div class="about_gradient"></div>
-            <img  class="about_img" src="../img/foto_contacto.jpeg" alt="foto contacto">
+
+  <!-- Header fijo -->
+  <header class="fijo bg-success text-white py-3">
+    <div class="container d-flex justify-content-between align-items-center">
+      <h1 class="h3">Contacto</h1>
+      <nav>
+        <ul class="nav">
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle text-white" href="../index.html" data-bs-toggle="dropdown">Principal</a>
+            <ul class="dropdown-menu">
+              <li><a class="dropdown-item" href="ververduras.html">Ver Verduras</a></li>
+              <li><a class="dropdown-item" href="verfrutas.html">Ver Frutas</a></li>
+              <li><a class="dropdown-item" href="vercondimentos.html">Ver Condimentos</a></li>
+            </ul>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle text-white" href="#" data-bs-toggle="dropdown">Ofertas de hoy</a>
+            <ul class="dropdown-menu">
+              <li><a class="dropdown-item" href="ofertasdefrutashoy.html">Ofertas de frutas hoy</a></li>
+              <li><a class="dropdown-item" href="ofertasdeverdurashoy.html">Ofertas de verduras hoy</a></li>
+            </ul>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link text-white" href="pedidos.html">Pedido</a>
+          </li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <!-- Sección principal con fondo -->
+  <main>
+    <section class="about">
+      <div class="about_gradient"></div>
+      <div class="container position-relative z-2">
+        <div class="row gy-4">
+          <div class="col-md-6">
             <article class="about_article">
-                <h3 class="about_title4">VENTA TELEFONICA :
-                WhatsApp
-                <i class="fi fi-brands-whatsapp"></i>
-                1125793570
-                LU - VI de 8:00 a 20
-                SA - DO -Feriados 9:00 a 14:00</h3>
-                
+              <h3 class="about_title4">
+                VENTA TELEFÓNICA: WhatsApp
+                <i class="fi fi-brands-whatsapp"></i><br>
+                1125793570<br>
+                LU - VI de 8:00 a 20<br>
+                SA - DO - Feriados 9:00 a 14:00
+              </h3>
             </article>
-            <h4  class ="about_title2">COBRANZA DE CREDITO :
-                cobranzas@verduleriamacarthur.com.ar</h4>
-            <h4 class="about_title3">SERVICIO A RESTAURANTES
-                Ventas precios al por mayor</h4>            
-            <h4 class="about_title1">ATENCION AL CLIENTE :0800-122 03838</h4>
-        </section>                                     
-                
-    </main>
-    
-    <footer id="pielogo">     
-        <div>
-            <section class="seccionpie">
-                <h3>Sitio Web</h3>
-                <p><a href="../index.html">Principal</a></p>
-                <p><a href="../js/pedidos.html">pedido</a></p>        
-            </section>
-            <section class="seccionpie">
-                <h3>Ayuda</h3>
-                <p><a href="../js/contacto.html">Contacto</a></p>
-            </section>
-            <section class="seccionpie">
-                <address>Buenos Aires, Argentina</address>
-                <small>&Quispe; Derechos Reservados 2024</small>
-                <br>
-                
-            </section>
-            <div class="recuperar"></div>        
+          </div>
+          <div class="col-md-6">
+            <h4 class="about_title2">
+              COBRANZA DE CRÉDITO:<br>
+              cobranzas@verduleriamacarthur.com.ar
+            </h4>
+            <h4 class="about_title3">
+              SERVICIO A RESTAURANTES:<br>
+              Ventas precios al por mayor
+            </h4>
+            <h4 class="about_title1">
+              ATENCIÓN AL CLIENTE:<br>
+              0800-122-03838
+            </h4>
+          </div>
         </div>
-    
+      </div>
+    </section>
+  </main>
+
+  <!-- Footer -->
+  <footer id="pielogo" class="bg-success text-white mt-5">
+    <div class="container py-4">
+      <div class="row">
+        <div class="col-md-4 seccionpie">
+          <h3>Sitio Web</h3>
+          <p><a href="../index.html">Principal</a></p>
+          <p><a href="../js/pedidos.html">Pedido</a></p>
+        </div>
+        <div class="col-md-4 seccionpie">
+          <h3>Ayuda</h3>
+          <p><a href="../js/contacto.html">Contacto</a></p>
+        </div>
+        <div class="col-md-4 seccionpie">
+          <address>Buenos Aires, Argentina</address>
+          <small>&Quispe; Derechos Reservados 2024</small>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Bootstrap JS -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>
