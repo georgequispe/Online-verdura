@@ -1,39 +1,53 @@
 let productos = [];
 let total = 0;
 
+// Función para agregar producto al carrito
 function agregarProducto(producto, precio) {
-    let carrito = document.getElementById("carrito");
-    let productoItem = document.createElement("p");
-    productoItem.textContent = producto;
+    const carrito = document.getElementById("carrito");
+    const btnPagar = document.querySelector("button.btn-primary");
+
+    if (!carrito || !btnPagar) {
+        console.error("No se encontró el carrito o el botón de pagar");
+        return;
+    }
+
+    const productoItem = document.createElement("p");
+    productoItem.textContent = `${producto} - $${precio}`;
     carrito.appendChild(productoItem);
 
-    // Agrega producto al array
-    productos.push({ nombre: producto, precio: precio });
-
-    // Actualizar el total
+    productos.push({ nombre: producto, precio });
     total += precio;
-    document.getElementById("btnPagar").textContent = `Pagar: $${total}`;
+
+    btnPagar.textContent = `Pagar: $${total}`;
 }
 
+// Función para pagar
 function pagar() {
-    // Guardar datos en localStorage
-    localStorage.setItem('productos', JSON.stringify(productos));
-    localStorage.setItem('total', total);
+    if (productos.length === 0) {
+        alert("El carrito está vacío");
+        return;
+    }
 
-    alert("Total a pagar: $ " + total);
-    window.location.href = "pedidos.html"; // Redirige a la página de pedidos.html
+    localStorage.setItem("productos", JSON.stringify(productos));
+    localStorage.setItem("total", total);
+
+    alert(`Total a pagar: $${total}`);
+    window.location.href = "pedidos.html";
 }
 
+// Función para limpiar el carrito
 function limpiarCarrito() {
-    if (confirm("Vaciar carrito?")) {
+    if (confirm("¿Vaciar carrito?")) {
         productos = [];
         total = 0;
-        document.getElementById("carrito").innerHTML = ""; // Elimina todos los productos del carrito
-        document.getElementById("btnPagar").textContent = "Pagar";        
-        // Limpia los datos del sessionStorage
-        localStorage.removeItem('productos');
-        localStorage.removeItem('total');
+
+        const carrito = document.getElementById("carrito");
+        const btnPagar = document.querySelector("button.btn-primary");
+
+        if (carrito) carrito.innerHTML = "";
+        if (btnPagar) btnPagar.textContent = "Pagar";
+
+        localStorage.removeItem("productos");
+        localStorage.removeItem("total");
     }
 }
-
-
