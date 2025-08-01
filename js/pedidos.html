@@ -133,8 +133,54 @@
   <!-- Bootstrap JS -->
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
 
-  <!-- Scripts personalizados -->
-  <script src="./js/comprafrutas.js"></script>
-  <script src="./js/enviarpedido.js"></script>
+  <!-- Mostrar productos comprados -->
+  <script>
+    document.addEventListener("DOMContentLoaded", () => {
+      const productos = JSON.parse(localStorage.getItem("productos")) || [];
+      const total = parseFloat(localStorage.getItem("total")) || 0;
+
+      const detalle = document.getElementById("detalle");
+      const carritoData = document.getElementById("carritoData");
+      const totalCarrito = document.getElementById("totalCarrito");
+
+      if (productos.length === 0) {
+        detalle.innerHTML = "<p>No hay productos en el carrito.</p>";
+      } else {
+        const lista = document.createElement("ul");
+        lista.classList.add("list-group", "mb-3");
+
+        productos.forEach(p => {
+          const item = document.createElement("li");
+          item.classList.add("list-group-item", "d-flex", "justify-content-between");
+          item.textContent = `${p.nombre}`;
+          const precio = document.createElement("span");
+          precio.textContent = `$${p.precio}`;
+          item.appendChild(precio);
+          lista.appendChild(item);
+        });
+
+        const totalElem = document.createElement("h4");
+        totalElem.textContent = `Total: $${total}`;
+        totalElem.classList.add("text-success", "mt-3");
+
+        detalle.appendChild(lista);
+        detalle.appendChild(totalElem);
+
+        carritoData.value = JSON.stringify(productos);
+        totalCarrito.value = total;
+      }
+    });
+  </script>
+  <script>
+  const formulario = document.getElementById("formulario");
+
+  formulario.addEventListener("submit", () => {
+    // Limpiar carrito después de enviar
+    localStorage.removeItem("productos");
+    localStorage.removeItem("total");
+  });
+</script>
+  <!-- Carrito JS (por si se reutiliza alguna función) -->
+  <script src="./js/carrito.js"></script>
 </body>
 </html>
