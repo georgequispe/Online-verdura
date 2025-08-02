@@ -1,7 +1,9 @@
 {
   "extends": "stylelint-config-standard",
+  "processors": ["stylelint-processor-html"],
   "rules": {
     "block-no-empty": true,
     "color-no-invalid-hex": true
   }
-}
+  }
+ 
