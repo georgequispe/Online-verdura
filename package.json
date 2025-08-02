@@ -6,7 +6,7 @@
     "lint:html": "htmlhint --config tests/.htmlhintrc '**/*.html'",
     "lint:css": "stylelint --config tests/.stylelintrc.json '**/*.css'",
     "lint:html2": "node tests/checkTags.js",
-    "lint:combined": "npm-run-all --continue-on-error lint:html lint:html2"
+    "lint:combined": "npm-run-all --continue-on-error lint:html lint:html2 lint:css"
   },
   "keywords": [],
   "author": "",
