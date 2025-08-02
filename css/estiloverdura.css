@@ -36,7 +36,7 @@ header.fijo {
 .card {
   border: 1px solid #cce5cc;
   border-radius: 8px;
-  box-shadow: 0 2px 4px rgba(0, 128, 0, 0.05);
+  box-shadow: 0 2px 4px rgb(0 128 0 / 5%);
   transition: transform 0.2s ease;
 }
 

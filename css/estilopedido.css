@@ -13,7 +13,7 @@ header {
   color: white;
   padding: 1rem;
   text-align: center;
-  box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+  box-shadow: 0 2px 5px rgb(0 0 0 / 20%);
 }
 
 header h1 {
@@ -75,9 +75,9 @@ main {
   max-width: 800px;
   margin: 2rem auto;
   padding: 1rem;
-  background-color: #ffffff;
+  background-color: #fff;
   border-radius: 10px;
-  box-shadow: 0 0 10px rgba(0,0,0,0.1);
+  box-shadow: 0 0 10px rgb(0 0 0 / 10%);
 }
 
 /* === Agradecimiento === */
