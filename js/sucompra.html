@@ -15,40 +15,55 @@
   <!-- Header -->
   <header class="bg-success text-white py-3 text-center">
     <h1>Resumen de tu Compra</h1>
+    <!-- Nav agregado -->
+    <nav class="mt-3">
+      <ul class="nav justify-content-center">
+        <li class="nav-item"><a class="nav-link text-white" href="../index.html">Inicio</a></li>
+        <li class="nav-item"><a class="nav-link text-white" href="ververduras.html">Verduras</a></li>
+        <li class="nav-item"><a class="nav-link text-white" href="verfrutas.html">Frutas</a></li>
+        <li class="nav-item"><a class="nav-link text-white" href="pedidos.html">Pedido</a></li>
+      </ul>
+    </nav>
   </header>
 
   <!-- Main -->
   <main class="container my-5">
     <h3 class="mb-4 text-center">Gracias por tu selección</h3>
 
-    <!-- Tabla de productos -->
-    <div class="table-responsive">
-      <table class="table table-bordered table-striped">
-        <thead class="table-success">
-          <tr>
-            <th>Producto</th>
-            <th>Precio</th>
-          </tr>
-        </thead>
-        <tbody id="tablaProductos"></tbody>
-        <tfoot>
-          <tr>
-            <td class="text-end fw-bold">Total:</td>
-            <td id="totalCompra" class="fw-bold text-success"></td>
-          </tr>
-        </tfoot>
-      </table>
-    </div>
+    <!-- Section agregada -->
+    <section aria-labelledby="tablaResumen">
+      <h4 id="tablaResumen" class="mb-3 text-success">Detalle de productos</h4>
 
-    <!-- Botón para confirmar -->
-    <div class="text-center mt-4">
-      <button class="btn btn-primary" onclick="confirmarCompra()">Confirmar Pedido</button>
-    </div>
+      <!-- Tabla de productos -->
+      <div class="table-responsive">
+        <table class="table table-bordered table-striped">
+          <thead class="table-success">
+            <tr>
+              <th>Producto</th>
+              <th>Precio</th>
+            </tr>
+          </thead>
+          <tbody id="tablaProductos"></tbody>
+          <tfoot>
+            <tr>
+              <td class="text-end fw-bold">Total:</td>
+              <td id="totalCompra" class="fw-bold text-success"></td>
+            </tr>
+          </tfoot>
+        </table>
+      </div>
+
+      <!-- Botón para confirmar -->
+      <div class="text-center mt-4">
+        <button class="btn btn-primary" onclick="confirmarCompra()">Confirmar Pedido</button>
+      </div>
+    </section>
   </main>
 
   <!-- Footer -->
   <footer class="bg-dark text-white py-4 mt-5">
     <div class="container text-center">
+      <img src="../img/icono-tomate.jpg" alt="icono de la verdulería" class="img-fluid mb-2">
       <p>&copy; Quispe - Verdulería Macarthur 2024</p>
     </div>
   </footer>
